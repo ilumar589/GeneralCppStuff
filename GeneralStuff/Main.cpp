@@ -36,8 +36,13 @@ int main()
 
 	string* aStringOnTheHeap = new string{ "A string on the heap!!!" };
 
+	string anotherStringOnTheStack = string{ "Another string on the stack!!!!" };
+
+	string* pointerToAStringOnTheStack = &anotherStringOnTheStack;
+
 	takeReference(aStringOnTheStack);
 	takeReference(*aStringOnTheHeap);
+	takeReference(*pointerToAStringOnTheStack);
 
 	try
 	{
@@ -52,6 +57,10 @@ int main()
 		cout << "String error message: " << e << endl;
 	}
 	
+	// release memory and set pointers to null addresses
 	delete aStringOnTheHeap;
+	aStringOnTheHeap = nullptr;
+	pointerToAStringOnTheStack = nullptr;
+
 	return 0;
 }
