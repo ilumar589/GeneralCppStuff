@@ -4,7 +4,7 @@
 void mightGoWrong()
 {
 	bool error1 = false;
-	bool error2 = true;
+	bool error2 = false;
 
 	if (error1)
 	{
