@@ -16,3 +16,23 @@ void mightGoWrong()
 		throw std::string{ "Something else went wrong." };
 	}
 }
+
+CanGoWrong::CanGoWrong()
+{
+	char* pMemory = new char[9999];
+	delete[] pMemory;
+}
+
+CanGoWrong::~CanGoWrong()
+{
+}
+
+const char * MyException::what() const noexcept
+{
+	return "Custom Exception";
+}
+
+void TestCustomException::goesWrong()
+{
+	throw MyException{};
+}

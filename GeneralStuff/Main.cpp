@@ -13,6 +13,25 @@ void takeReference(string& aString)
 int main()
 {
 
+	try
+	{
+		TestCustomException customException;
+		customException.goesWrong();
+	}
+	catch (MyException& e)
+	{
+		cout << e.what();
+	}
+
+	try
+	{
+		CanGoWrong wrong;
+	}
+	catch (bad_alloc& e)
+	{
+		cout << "Caught exception: " << e.what();
+	}
+
 	string aStringOnTheStack = string{ "A string on the stack!!!!" };
 
 	string* aStringOnTheHeap = new string{ "A string on the heap!!!" };
