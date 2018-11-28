@@ -13,5 +13,24 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\BasicExcecptions">
+      <UniqueIdentifier>{01340cfb-2f57-44dc-be51-faf16c990532}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BasicExceptions">
+      <UniqueIdentifier>{ed4f43a8-88f4-4316-b6e9-38139609f891}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicExceptions.cpp">
+      <Filter>Source Files\BasicExceptions</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BasicExceptions.h">
+      <Filter>Header Files\BasicExcecptions</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
