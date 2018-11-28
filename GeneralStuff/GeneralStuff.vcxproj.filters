@@ -32,5 +32,8 @@
     <ClInclude Include="BasicExceptions.h">
       <Filter>Header Files\BasicExcecptions</Filter>
     </ClInclude>
+    <ClInclude Include="TestFolder\TestHeader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
