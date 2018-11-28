@@ -19,6 +19,12 @@
     <Filter Include="Source Files\BasicExceptions">
       <UniqueIdentifier>{ed4f43a8-88f4-4316-b6e9-38139609f891}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\TextFiles">
+      <UniqueIdentifier>{296efec0-d196-4d6d-a374-a8df9a396262}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TextFiles">
+      <UniqueIdentifier>{0c6fbdb3-0b21-4cf2-a733-106d77239c67}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -26,6 +32,9 @@
     </ClCompile>
     <ClCompile Include="BasicExceptions.cpp">
       <Filter>Source Files\BasicExceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="TextFiles\TextFiles.cpp">
+      <Filter>Source Files\TextFiles</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -35,5 +44,13 @@
     <ClInclude Include="TestFolder\TestHeader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TextFiles\TextFiles.h">
+      <Filter>Header Files\TextFiles</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Text.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

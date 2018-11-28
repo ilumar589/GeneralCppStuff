@@ -1,7 +1,9 @@
 #include <iostream>
 #include <string>
+#include <fstream>
 
 #include "BasicExceptions.h"
+#include "TextFiles/TextFiles.h"
 
 using namespace std;
 
@@ -12,6 +14,8 @@ void takeReference(string& aString)
 
 int main()
 {
+
+	workWithFiles();
 
 	try
 	{

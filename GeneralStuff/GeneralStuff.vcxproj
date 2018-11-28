@@ -125,10 +125,15 @@
   <ItemGroup>
     <ClCompile Include="BasicExceptions.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="TextFiles\TextFiles.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BasicExceptions.h" />
     <ClInclude Include="TestFolder\TestHeader.h" />
+    <ClInclude Include="TextFiles\TextFiles.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Text.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
