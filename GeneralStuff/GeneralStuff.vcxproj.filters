@@ -25,6 +25,12 @@
     <Filter Include="Source Files\TextFiles">
       <UniqueIdentifier>{0c6fbdb3-0b21-4cf2-a733-106d77239c67}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\TestClassInterdependency">
+      <UniqueIdentifier>{d9cb4fae-0d3d-4700-9991-83e4512322c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TestClassInterdependency">
+      <UniqueIdentifier>{92378111-8937-4cdc-8cfb-b51a41c2e755}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -35,6 +41,9 @@
     </ClCompile>
     <ClCompile Include="TextFiles\TextFiles.cpp">
       <Filter>Source Files\TextFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="TestClassInterdependency\Interdependency.cpp">
+      <Filter>Source Files\TestClassInterdependency</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -47,10 +56,16 @@
     <ClInclude Include="TextFiles\TextFiles.h">
       <Filter>Header Files\TextFiles</Filter>
     </ClInclude>
+    <ClInclude Include="TestClassInterdependency\Interdependency.h">
+      <Filter>Header Files\TestClassInterdependency</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Text.txt">
       <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="Population.txt">
+      <Filter>Header Files\TextFiles</Filter>
     </Text>
   </ItemGroup>
 </Project>

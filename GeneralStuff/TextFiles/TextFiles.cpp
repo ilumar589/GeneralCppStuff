@@ -25,3 +25,26 @@ void workWithFiles()
 		cout << "Could not open file: " << outputFileName << endl;
 	}
 }
+
+void readPopulation()
+{
+	string fileName{ "Population.txt" };
+	ifstream input;
+
+	input.open(fileName);
+
+	if (!input.is_open())
+	{
+		return;
+	}
+
+	string line;
+
+	getline(input, line, ':');
+
+	int population;
+
+	input >> population;
+
+	cout << "Country name: " << line << " with population " << population;
+}

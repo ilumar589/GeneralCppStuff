@@ -4,6 +4,7 @@
 
 #include "BasicExceptions.h"
 #include "TextFiles/TextFiles.h"
+#include "TestClassInterdependency/Interdependency.h"
 
 using namespace std;
 
@@ -12,8 +13,53 @@ void takeReference(string& aString)
 	cout << aString << endl;
 }
 
+void testInterdependancy()
+{
+	A a{ 1, "a class" };
+
+	B b{ a };
+
+	cout << "Original dependency -->" << "Id: " << a.GetId() << " ;Name: " << a.GetName() << endl;
+
+	b.GetDependancy().SetId(2);
+
+	string aNewName{ "a new name" };
+
+	b.GetDependancy().SetName(aNewName);
+
+	cout << "Dependency id: " << b.GetDependancy().GetId() << " ; Dependency name: " << b.GetDependancy().GetName() << endl;
+
+	cout << "Original dependency after changes -->" << "Id: " << a.GetId() << " ;Name: " << a.GetName() << endl;
+
+	// use of pointer
+
+	cout << "----- POINTER USE DELIMITER-----" << endl;
+
+	A a2{ 1, "a class" };
+
+	C c{ &a2 };
+
+	cout << "Original dependency -->" << "Id: " << a2.GetId() << " ;Name: " << a2.GetName() << endl;
+
+	c.GetDependancy()->SetId(2);
+
+	string aNewName2{ "a new name" };
+
+	c.GetDependancy()->SetName(aNewName2);
+
+	cout << "Dependency id: " << c.GetDependancy()->GetId() << " ; Dependency name: " << c.GetDependancy()->GetName() << endl;
+
+	cout << "Original dependency after changes -->" << "Id: " << a2.GetId() << " ;Name: " << a2.GetName() << endl;
+
+
+}
+
 int main()
 {
+
+	testInterdependancy();
+
+	readPopulation();
 
 	workWithFiles();
 
