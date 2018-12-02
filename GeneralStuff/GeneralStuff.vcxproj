@@ -130,6 +130,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BasicExceptions.h" />
+    <ClInclude Include="ClassDefinitions\ClassDefinitions.h" />
     <ClInclude Include="TestClassInterdependency\Interdependency.h" />
     <ClInclude Include="TestFolder\TestHeader.h" />
     <ClInclude Include="TextFiles\TextFiles.h" />

@@ -5,8 +5,19 @@
 #include "BasicExceptions.h"
 #include "TextFiles/TextFiles.h"
 #include "TestClassInterdependency/Interdependency.h"
+#include "ClassDefinitions/ClassDefinitions.h"
 
 using namespace std;
+
+void testAssignementsAndInitilization()
+{
+	TestConstructorsAndOperators t;
+	TestConstructorsAndOperators t2{20, "T2 name"};
+
+	t = t2;
+
+	TestConstructorsAndOperators t3{ t };
+}
 
 void takeReference(string& aString)
 {
@@ -15,6 +26,8 @@ void takeReference(string& aString)
 
 void testInterdependancy()
 {
+	testAssignementsAndInitilization();
+
 	A a{ 1, "a class" };
 
 	B b{ a };

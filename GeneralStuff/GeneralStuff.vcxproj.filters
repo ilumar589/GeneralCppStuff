@@ -31,6 +31,9 @@
     <Filter Include="Source Files\TestClassInterdependency">
       <UniqueIdentifier>{92378111-8937-4cdc-8cfb-b51a41c2e755}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ClassDefinitions">
+      <UniqueIdentifier>{9426661f-a110-4dd9-9233-dafe0c7a7b61}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -58,6 +61,9 @@
     </ClInclude>
     <ClInclude Include="TestClassInterdependency\Interdependency.h">
       <Filter>Header Files\TestClassInterdependency</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassDefinitions\ClassDefinitions.h">
+      <Filter>Header Files\ClassDefinitions</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
