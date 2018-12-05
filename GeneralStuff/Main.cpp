@@ -6,8 +6,41 @@
 #include "TextFiles/TextFiles.h"
 #include "TestClassInterdependency/Interdependency.h"
 #include "ClassDefinitions/ClassDefinitions.h"
+#include "ClassDefinitions/RingBuffer.h"
 
 using namespace std;
+
+void UseRingBuffer()
+{
+	Ring<string> Buffer{ 3 };
+
+	Buffer.Add("one");
+	Buffer.Add("two");
+	Buffer.Add("three");
+	Buffer.Add("four");
+
+	// C++ 98 style
+	for (Ring<string>::Iterator It = Buffer.begin(); It != Buffer.end(); It++)
+	{
+		cout << *It << endl;
+	}
+
+	// C++ 11 style
+	for (auto Buff : Buffer)
+	{
+		cout << Buff << endl;
+	}
+}
+
+void needToInvestigate()
+{
+	A a{ 1, "a class" };
+
+	B *b = new B{ a };
+
+	// what happens to the non pointer data member inside the B class when I call delete on pointer b ?
+	delete b;
+}
 
 void testAssignementsAndInitilization()
 {
@@ -69,6 +102,7 @@ void testInterdependancy()
 
 int main()
 {
+	UseRingBuffer();
 
 	testInterdependancy();
 

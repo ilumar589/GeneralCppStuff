@@ -13,7 +13,7 @@ private:
 public:
 	TestConstructorsAndOperators() : aNumber(0), aName("") {}
 
-	TestConstructorsAndOperators(int aNumber, const std::string& aName) : aName(aName), aNumber(aNumber) {}
+	TestConstructorsAndOperators(int aNumber, const std::string& aName) : aNumber(aNumber), aName(aName) {}
 
 	TestConstructorsAndOperators(const TestConstructorsAndOperators& other) : aNumber(other.aNumber), aName(other.aName)
 	{
@@ -28,5 +28,12 @@ public:
 		aName = other.aName;
 
 		return *this;
+	}
+
+	friend std::ostream & operator<<(std::ostream & out, const TestConstructorsAndOperators & other)
+	{
+		out << other.aNumber << "; " << other.aName;
+
+		return out;
 	}
 };

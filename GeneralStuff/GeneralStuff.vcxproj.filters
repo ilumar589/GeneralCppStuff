@@ -34,6 +34,9 @@
     <Filter Include="Header Files\ClassDefinitions">
       <UniqueIdentifier>{9426661f-a110-4dd9-9233-dafe0c7a7b61}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\ClassDefinitions">
+      <UniqueIdentifier>{433c44f7-8845-465a-b1e4-cf7bd1a11b4b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -47,6 +50,12 @@
     </ClCompile>
     <ClCompile Include="TestClassInterdependency\Interdependency.cpp">
       <Filter>Source Files\TestClassInterdependency</Filter>
+    </ClCompile>
+    <ClCompile Include="ComplexNumber\ComplexNumber.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassDefinitions\RingBuffer.cpp">
+      <Filter>Source Files\ClassDefinitions</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -63,6 +72,12 @@
       <Filter>Header Files\TestClassInterdependency</Filter>
     </ClInclude>
     <ClInclude Include="ClassDefinitions\ClassDefinitions.h">
+      <Filter>Header Files\ClassDefinitions</Filter>
+    </ClInclude>
+    <ClInclude Include="ComplexNumber\ComplexNumber.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassDefinitions\RingBuffer.h">
       <Filter>Header Files\ClassDefinitions</Filter>
     </ClInclude>
   </ItemGroup>
