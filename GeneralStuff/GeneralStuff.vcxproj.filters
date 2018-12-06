@@ -37,6 +37,9 @@
     <Filter Include="Source Files\ClassDefinitions">
       <UniqueIdentifier>{433c44f7-8845-465a-b1e4-cf7bd1a11b4b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\MoveSemantics">
+      <UniqueIdentifier>{2510e662-4a33-4101-816a-684aa4d584b5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -79,6 +82,9 @@
     </ClInclude>
     <ClInclude Include="ClassDefinitions\RingBuffer.h">
       <Filter>Header Files\ClassDefinitions</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveSemantics\MoveSemantics.h">
+      <Filter>Header Files\MoveSemantics</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

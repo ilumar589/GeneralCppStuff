@@ -137,6 +137,7 @@
     <ClInclude Include="ClassDefinitions\ClassDefinitions.h" />
     <ClInclude Include="ComplexNumber\ComplexNumber.h" />
     <ClInclude Include="ClassDefinitions\RingBuffer.h" />
+    <ClInclude Include="MoveSemantics\MoveSemantics.h" />
     <ClInclude Include="TestClassInterdependency\Interdependency.h" />
     <ClInclude Include="TestFolder\TestHeader.h" />
     <ClInclude Include="TextFiles\TextFiles.h" />

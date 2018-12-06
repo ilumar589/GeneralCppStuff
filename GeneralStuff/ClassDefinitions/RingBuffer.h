@@ -32,6 +32,8 @@ public:
 		return Iterator{ 0, *this };
 	}
 
+	// I guess that in order for something to be iterable, whatever the begin and end functions return must have an != operator overloaded for comparisons 
+	// to be made
 	Iterator end()
 	{
 		return Iterator{ m_Size, *this };
