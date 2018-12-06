@@ -13,7 +13,7 @@ namespace MoveSemantics
 	public:
 		Test() 
 		{
-			m_Buffer = new int[SIZE];
+			m_Buffer = new int[SIZE] {};
 		}
 
 		// copy constructor
@@ -25,7 +25,7 @@ namespace MoveSemantics
 		// copy operator
 		Test &operator=(const Test & Other)
 		{
-			m_Buffer = new int[SIZE];
+			m_Buffer = new int[SIZE] {};
 
 			memcpy(m_Buffer, Other.m_Buffer, sizeof(int) * SIZE);
 
