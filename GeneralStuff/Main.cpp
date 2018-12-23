@@ -7,6 +7,8 @@
 #include "TestClassInterdependency/Interdependency.h"
 #include "ClassDefinitions/ClassDefinitions.h"
 #include "ClassDefinitions/RingBuffer.h"
+#include "Bind/BindExample.h"
+
 
 using namespace std;
 
@@ -57,6 +59,11 @@ void takeReference(string& aString)
 	cout << aString << endl;
 }
 
+A retRight() {
+	A a_move{ 2, "a second class" };
+	return  a_move;
+}
+
 void testInterdependancy()
 {
 	testAssignementsAndInitilization();
@@ -64,6 +71,9 @@ void testInterdependancy()
 	A a{ 1, "a class" };
 
 	B b{ a };
+
+
+	B b_move{ retRight() };
 
 	cout << "Original dependency -->" << "Id: " << a.GetId() << " ;Name: " << a.GetName() << endl;
 
@@ -102,6 +112,8 @@ void testInterdependancy()
 
 int main()
 {
+	BindExample::bindAdd();
+
 	UseRingBuffer();
 
 	testInterdependancy();

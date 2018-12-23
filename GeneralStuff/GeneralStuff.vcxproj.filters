@@ -40,6 +40,18 @@
     <Filter Include="Header Files\MoveSemantics">
       <UniqueIdentifier>{2510e662-4a33-4101-816a-684aa4d584b5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\SmartPointers">
+      <UniqueIdentifier>{63e6435b-fbce-49b6-90e7-60914fb04604}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SmartPointers">
+      <UniqueIdentifier>{a8f1a515-fa4e-4680-ac5d-858a7e043661}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Bind">
+      <UniqueIdentifier>{7d93b41a-8061-49bd-a34d-1dc34309f040}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Bind">
+      <UniqueIdentifier>{e856ae80-75ae-4a3f-bddc-7f351c64fe75}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -59,6 +71,9 @@
     </ClCompile>
     <ClCompile Include="ClassDefinitions\RingBuffer.cpp">
       <Filter>Source Files\ClassDefinitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Bind\BindExample.cpp">
+      <Filter>Source Files\Bind</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -85,6 +100,12 @@
     </ClInclude>
     <ClInclude Include="MoveSemantics\MoveSemantics.h">
       <Filter>Header Files\MoveSemantics</Filter>
+    </ClInclude>
+    <ClInclude Include="Bind\BindExample.h">
+      <Filter>Header Files\Bind</Filter>
+    </ClInclude>
+    <ClInclude Include="Bind\SmartPointerExamples.h">
+      <Filter>Header Files\SmartPointers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

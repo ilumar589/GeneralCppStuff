@@ -29,7 +29,7 @@ CanGoWrong::~CanGoWrong()
 
 const char * MyException::what() const noexcept
 {
-	return "Custom Exception";
+	return "Custom Exception"; // this has to be on the heap (so I guess the compiler does it), otherwise we return a pointer to already cleared memory
 }
 
 void TestCustomException::goesWrong()
