@@ -127,6 +127,7 @@
   <ItemGroup>
     <ClCompile Include="BasicExceptions.cpp" />
     <ClCompile Include="Bind\BindExample.cpp" />
+    <ClCompile Include="BirdExample.cpp" />
     <ClCompile Include="ComplexNumber\ComplexNumber.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="ClassDefinitions\RingBuffer.cpp" />
@@ -134,9 +135,11 @@
     <ClCompile Include="TextFiles\TextFiles.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AutoPointerExample.h" />
     <ClInclude Include="BasicExceptions.h" />
     <ClInclude Include="Bind\BindExample.h" />
     <ClInclude Include="Bind\SmartPointerExamples.h" />
+    <ClInclude Include="BirdExample.h" />
     <ClInclude Include="ClassDefinitions\ClassDefinitions.h" />
     <ClInclude Include="ComplexNumber\ComplexNumber.h" />
     <ClInclude Include="ClassDefinitions\RingBuffer.h" />

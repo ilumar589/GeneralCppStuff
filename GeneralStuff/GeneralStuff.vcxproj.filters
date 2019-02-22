@@ -52,6 +52,9 @@
     <Filter Include="Header Files\Bind">
       <UniqueIdentifier>{e856ae80-75ae-4a3f-bddc-7f351c64fe75}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\MoveSemantics">
+      <UniqueIdentifier>{d9638a9f-9cf6-465e-bf68-c91cc306b86c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -74,6 +77,9 @@
     </ClCompile>
     <ClCompile Include="Bind\BindExample.cpp">
       <Filter>Source Files\Bind</Filter>
+    </ClCompile>
+    <ClCompile Include="BirdExample.cpp">
+      <Filter>Source Files\MoveSemantics</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -106,6 +112,12 @@
     </ClInclude>
     <ClInclude Include="Bind\SmartPointerExamples.h">
       <Filter>Header Files\SmartPointers</Filter>
+    </ClInclude>
+    <ClInclude Include="BirdExample.h">
+      <Filter>Header Files\MoveSemantics</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoPointerExample.h">
+      <Filter>Header Files\MoveSemantics</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -8,6 +8,7 @@
 #include "ClassDefinitions/ClassDefinitions.h"
 #include "ClassDefinitions/RingBuffer.h"
 #include "Bind/BindExample.h"
+#include "AutoPointerExample.h"
 
 
 using namespace std;
@@ -112,6 +113,8 @@ void testInterdependancy()
 
 int main()
 {
+	AutoPointerExampleNs::executeExample();
+
 	BindExample::bindAdd();
 
 	UseRingBuffer();
