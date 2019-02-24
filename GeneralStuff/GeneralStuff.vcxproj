@@ -143,6 +143,8 @@
     <ClInclude Include="ClassDefinitions\ClassDefinitions.h" />
     <ClInclude Include="ComplexNumber\ComplexNumber.h" />
     <ClInclude Include="ClassDefinitions\RingBuffer.h" />
+    <ClInclude Include="C_High_Performance_Book\LambdaExamples.h" />
+    <ClInclude Include="C_High_Performance_Book\PreservingValidStateExample.h" />
     <ClInclude Include="MoveSemantics\MoveSemantics.h" />
     <ClInclude Include="TestClassInterdependency\Interdependency.h" />
     <ClInclude Include="TestFolder\TestHeader.h" />

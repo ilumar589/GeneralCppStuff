@@ -119,6 +119,12 @@
     <ClInclude Include="AutoPointerExample.h">
       <Filter>Header Files\MoveSemantics</Filter>
     </ClInclude>
+    <ClInclude Include="C_High_Performance_Book\PreservingValidStateExample.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C_High_Performance_Book\LambdaExamples.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Text.txt">
