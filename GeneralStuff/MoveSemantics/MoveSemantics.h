@@ -33,7 +33,7 @@ namespace MoveSemantics
 		}
 
 		// move constructor
-		Test(Test && Other)
+		Test(Test && Other) noexcept
 		{
 			// steal the resource
 			// point m_Buffer to Other.m_Buffer
@@ -43,7 +43,7 @@ namespace MoveSemantics
 			Other.m_Buffer = nullptr;
 		}
 
-		Test &operator=(Test && Other)
+		Test &operator=(Test && Other) noexcept
 		{
 			// we need to take into account here that our current object has already allocated memory and we need to free it
 			delete[] m_Buffer;
